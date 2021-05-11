@@ -16,7 +16,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap/css/leocss.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -57,7 +56,7 @@
             
             <ul class="nav navbar-nav">
      
-              <li class="active"><a href="http://127.0.0.1:5500/website/test1.html#" >Προιντα</a></li>
+              <li class="active"><a href="http://127.0.0.1:5500/website/test1.html#" class="navbar-index">Προιντα</a></li>
               <li><a href="#">Σχετικα με εμας</a></li>
               <li><a href="#">Επικοινωνια</a></li>
               <li class="dropdown">
@@ -72,13 +71,16 @@
                   <li><a href="#">One more separated link</a></li>
                 </ul>
               </li>
-              <div id="login-button">
-                <figure>
+              <div class="header-button" >
                   <a href="https://www.google.gr/?hl=el">
-                    <img id="login-button-icon" type="svg" name="Log-in" src="../website/images/login.svg" alt="Log-in">
-                  </a>              
-                </figure>
+                    <img class="header-button-icon" type="svg" src="../website/images/list-icon.svg" alt="List icon">
+                  </a>            
               </div>
+              <div class="header-button" >
+                <a href="https://www.google.gr/?hl=el" >
+                  <img class="header-button-icon" type="svg" name="Log-in" src="../website/images/login.svg" alt="Log-in">
+                </a>              
+            </div>
               <i class="fas fa-sign-in-alt"> </i>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -87,8 +89,8 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Πρόγραμμα Λίστας</h1>
-        <p>Γραψε κατι εδω</p>
-        <!--<img style="position: relative; left: 500px; top: -45px; height: 280px;" type="jpg" name="mother-and-list" src="../website/images/necessary_desktop.jpg" alt="Pregnant with a list.">-->
+        <p>Γραψε κατι δω</p>
+          <!--img style="position: relative;" type="jpg" name="mother-and-list" src="../website/images/necessary_desktop.jpg" alt="Pregnant with a list.">-->
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button"> Φτιάξτε την δική σας Λίστα</a>
         </p>

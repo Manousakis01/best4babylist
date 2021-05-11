@@ -1590,7 +1590,7 @@ pre code {
 }
 #header-border-top {
   position: relative;
-  width: 94%%;
+  width: 100%;
   height: 8px;
 }
 #header-border-top:before {
@@ -4096,12 +4096,17 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .nav > li {
   position: relative;
+  top: 8px;
   display: block;
 }
 .nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
+  color: #00344d;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -4393,20 +4398,24 @@ textarea.input-group-sm > .input-group-btn > .btn {
   float: left;
   position: relative;
 }
-#login-button {
-  float: right;
-  display: flex;
+.navbar-index {
   position: relative;
-  right: 20px;
-  height: 50px;
-  width: 50px;
+  float: none;
 }
-#login-button-icon {
+
+.header-button {
+  float: right;
   position: relative;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  top: 3px;
+  top: 8px;
+  right: 15px;
+  height: 45px;
+  width: 45px;
+  margin-right: 8px;
+}
+
+.header-button-icon {
+  position: relative;
+  height: 45px;
 }
 
 .navbar-brand {
@@ -4440,6 +4449,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  transition: all 0.4 ease;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -4633,6 +4643,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
+  position: -webkit-sticky;
   background-color: #fff;
   border-color: #ffffff;
 }
@@ -4650,16 +4661,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a {
   color: #00344d;
 }
+
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #333;
+  color: #f69da3;
   background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #00344d;
-  background-color: #e7e7e7;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:focus,
