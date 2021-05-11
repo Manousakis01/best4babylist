@@ -3250,14 +3250,20 @@ fieldset[disabled] .btn-default:hover {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #00344d;
+  border-color: #62aac1;
 }
 .btn-primary.focus,
 .btn-primary:focus {
   color: #fff;
   background-color: #286090;
   border-color: #122b40;
+}
+.jumbotron > img {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 450px;
 }
 .btn-primary:hover {
   color: #fff;
@@ -5112,8 +5118,8 @@ a.badge:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: #00344d;
+  background-color: rgb(246, 234, 234);
 }
 .jumbotron .h1,
 .jumbotron h1 {
