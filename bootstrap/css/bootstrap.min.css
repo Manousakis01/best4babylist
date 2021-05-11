@@ -4408,6 +4408,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   float: none;
 }
+.navbar-nav .active > :hover {
+  position: relative;
+  float: none;
+  color: #3c763d;
+}
 
 .header-button {
   float: right;
