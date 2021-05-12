@@ -4343,12 +4343,21 @@ textarea.input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
   }
 }
-.navbar-fixed-bottom,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: #00344d;
+  text-align: center;
+}
 .navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
+  color: #00344d;
+  text-align: center;
 }
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
@@ -4367,10 +4376,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-fixed-top {
-  top: 0;
+  top: 1;
   border-width: 0 0 1px;
 }
 .navbar-fixed-bottom {
+  position: fixed;
   bottom: 0;
   margin-bottom: 0;
   border-width: 1px 0 0;
@@ -4655,8 +4665,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   position: -webkit-sticky;
-  background-color: #fff;
-  border-color: #ffffff;
+  background-color: rgba(249, 246, 246, 0.9);
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4683,7 +4692,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #00344d;
-  background-color: #ffffff;
+  background-color: rgba(249, 246, 246, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:focus,
@@ -5143,6 +5152,8 @@ a.badge:hover {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
+  position: relative;
+  top: 80px;
 }
 .jumbotron .container {
   max-width: 100%;
