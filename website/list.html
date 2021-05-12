@@ -3,6 +3,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
       <!-- Bootstrap core CSS -->
       <link href="../css/bootstrap.min.css" rel="stylesheet">
       <!-- This CSS file (bootstrap-theme.min.css) is optional -->
@@ -78,28 +80,112 @@
             </div><!--/.nav-collapse -->
           </div><!--/.container-fluid -->
       </nav>
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Πρόγραμμα Λίστας</h1>
-        <hr style="color: rgb(243, 72, 72);">
-        <br>
-        <h3>Το "Πρόγραμμα Λίστας" προσφέρει την νέα εμπειρία 
-        <br> στην επιλογή των προϊόντων για το βρέφος σας.</h3>
-        <!--img  type="jpg" name="mother-and-list" src="../website/images/necessary_desktop.jpg" alt="Pregnant with a list.">
-        -->
-          <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button"> Φτιάξτε την δική σας Λίστα</a>
-        </p>
-      </div>  
     </div>
     </div> <!-- /container -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <header style="padding-top: 30px; padding-bottom: 30px; text-align: center; font-size: 30px;">Προϊόντα Λίστας</header>
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="images/pouches/pouch1.jpg" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Kikka Boo Μάρσιπος Gwen - Red</h4>
+                                           <p>Ρυθμιζόμενοι ιμάντες ώμου με επένδυση.<br>
+                                            Πτυσσόμενο στήριγμα κεφαλιού.<br>
+                                            Υφάσματα υψηλής ποιότητας.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">22.90€</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">22.90€</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+								<button id="butt1" onclick="one(this);"  class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+                        <tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="images/strollers/fourth-stroller.jpg" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Cybex Καρότσι Balios S 2in1 Navy Blue</h4>
+                                           <p>Πορτ μπεμπέ που μετατρέπεται σε κάθισμα.<br>
+                                            Κλείσιμο με το ένα χέρι, σε αυτοστηριζόμενη θέση.<br>
+                                            Μαλακή ανάρτηση σε όλους τους τροχούς.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">499.00€</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">499.00€</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+								<button id="butt2" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+                        <tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="images/beds/first-bed.jpg" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Kikka Βoo Παρκοκρέβατο Dessine Moi 2 layers με Αλλαξιέρα Grey</h4>
+                                           <p>Κατάλληλο για παιδιά από 0 έως 36 μήνες.<br>
+                                            Ελαφρύ πλαίσιο από αλουμίνιο.<br>
+                                            Δύο επίπεδα ύπνου, το δεύτερο αφαιρείται με φερμουάρ.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">125.00€</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">125.00€</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+								<button id="butt3" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total 1.99</strong></td>
+						</tr>
+						<tr>
+							<td><a href="strollers.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
     <div class="navbar-fixed-bottom">
-      <hr>
-      <footer >
+      <footer style="position: static;" >
           <p>&copy; Copyright 2021 Εργασία | AUEB</p>
       </footer>
     </div>
+    <script>
+    function one(obj){
+        var item = $(obj).prev().parent().parent().andSelf().remove();    
+    }
+    </script>
     <!-- js for the dropdown button-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
