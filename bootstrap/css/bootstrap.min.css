@@ -2443,6 +2443,9 @@ th {
 .table-condensed > thead > tr > th {
   padding: 5px;
 }
+#Total-sum {
+  font-size: 20px;
+}
 .table-bordered {
   border: 1px solid #ddd;
 }
