@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/tab-icon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Find list for best4babylist" />
+    <title>Find my list</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    
+  </head>
+  <body style="background-color: #f69da3;" class="text-center">
+    <main class="form-signin">
+      <form>
+        <a href="index.html">
+          <img
+            src="https://www.best4baby.gr/img/newlogo.svg"
+            alt="Best4baby"
+            style="position: relative; margin-top: 200px;"
+            width="300"
+            height="75"
+          />
+      </a>
+        <h1 class="h3 mb-3 fw-normal">Βρές την λίστα μου.</h1>
+        <label style="padding-top: 10px" for="floatingInput"
+          >Κωδικός λίστας</label
+        >
+        <div class="form-floating">
+          <input
+            type="listcode"
+            class="form-control"
+            id="floatingInput"
+            placeholder="#12345ex@ample"
+            data-error="Μη έγκυρο email."
+          />
+            <button type="button" style="margin-top: 10px;" class="w-100 btn btn-lg btn-primary" type="submit" onclick="location.href='list.html';">
+            Αναζήτηση
+            </button>
+      </form>
+    </main>
+    <div style="position:relative; padding-top: 280px;" class="navbar-fixed-bottom">
+      <hr>
+      <footer style="position: relative;" >
+          <p>&copy; Copyright 2021 Εργασία | AUEB</p>
+      </footer>
+    </div>
+  </body>
+</html>
