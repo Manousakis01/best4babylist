@@ -114,7 +114,7 @@
 							<td data-th="Subtotal" class="text-center" id='price1'>22.90€</td>
 							<td class="actions" data-th="">
                 <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button id="butt1" onclick="one(this);"  class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button id="butt1" onclick="one(this); calculateTotalAmount();"  class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
                         <tr>
@@ -136,7 +136,7 @@
 							<td data-th="Subtotal" class="text-center" id='price2'>499.00€</td>
 							<td class="actions" data-th="">
                 <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button id="butt2" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button id="butt2" onclick="one(this); calculateTotalAmount();" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
                         <tr>
@@ -158,7 +158,7 @@
 							<td data-th="Subtotal"  style="padding-right:-100px" class="text-center" id='price3'>125.00€</td>
 							<td class="actions" data-th="">
                 <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-								<button id="butt3" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+								<button id="butt3" onclick="one(this); calculateTotalAmount();" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
 					</tbody>
@@ -178,16 +178,31 @@
 							var tot_price = price * quantity;
 							document.getElementById(id).innerHTML = String(tot_price.toFixed(2)) + '€';
 						}
-					</script>
-					<script>
+          </script>
+          <script>
 						function calculateTotalAmount() {
-							var p1 = parseFloat(document.getElementById('price1').innerHTML.substring(0, document.getElementById('price1').innerHTML.length - 1));
-							var p2 = parseFloat(document.getElementById('price2').innerHTML.substring(0, document.getElementById('price2').innerHTML.length - 1));
-							var p3 = parseFloat(document.getElementById('price3').innerHTML.substring(0, document.getElementById('price3').innerHTML.length - 1));
+              var p1, p2, p3
+              p1 = 0;
+              p2 = 0;
+              p3 = 0;
+              try {
+							  p1 = parseFloat(document.getElementById('price1').innerHTML.substring(0, document.getElementById('price1').innerHTML.length - 1));
+              } catch(e) {}
+              try {
+							p2 = parseFloat(document.getElementById('price2').innerHTML.substring(0, document.getElementById('price2').innerHTML.length - 1));
+              } catch(e) {}
+              try {
+							p3 = parseFloat(document.getElementById('price3').innerHTML.substring(0, document.getElementById('price3').innerHTML.length - 1));
+              } catch(e) {}
 							var tot = p1 + p2 + p3;
-							document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '0€';
+							document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '€';
+              if (Number.isInteger(tot)) {
+                document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '€';
+              } else {
+                document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '0€';
+              }
 						}
-					</script>
+          </script>
 				</table>
 </div>
     <div class="navbar-fixed-bottom">
