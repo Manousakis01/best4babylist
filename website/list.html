@@ -55,7 +55,7 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html" class="navbar-index">Αρχική</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Προιοντα <span class="caret"></span></a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Προϊοντα <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                       <li><a href="strollers.html">Παιδικά καρότσια</a></li>
                       <li><a href="car-seats.html">Καθίσματα αυτοκινήτου</a></li>
@@ -87,10 +87,10 @@
 	<table id="cart" class="table table-hover table-condensed">
     				<thead>
 						<tr>
-							<th style="width:50%">Product</th>
-							<th style="width:10%">Price</th>
-							<th style="width:8%">Quantity</th>
-							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:50%">Προϊόν</th>
+							<th style="width:10%">Τιμή</th>
+							<th style="width:8%">Ποσότητα</th>
+							<th style="width:22%" class="text-center">Υποσύνολο</th>
 							<th style="width:10%"></th>
 						</tr>
 					</thead>
@@ -164,12 +164,12 @@
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center" id='total'><strong>Total 646.90</strong></td>
+							<td class="text-center" id='total'><strong>Σύνολο 646.90</strong></td>
 						</tr>
 						<tr>
-							<td><a href="strollers.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td><a href="strollers.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Συνέχεια αγορών</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong id="Total-sum">Total : 646.90€</strong></td>
+							<td class="hidden-xs text-center"><strong id="Total-sum">Σύνολο : 646.90€</strong></td>
 							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
 						</tr>
 					</tfoot>
@@ -195,11 +195,11 @@
 							p3 = parseFloat(document.getElementById('price3').innerHTML.substring(0, document.getElementById('price3').innerHTML.length - 1));
               } catch(e) {}
 							var tot = p1 + p2 + p3;
-							document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '€';
+							document.getElementById('Total-sum').innerHTML = "Σύνολο : " + String(tot) + '€';
               if (Number.isInteger(tot)) {
-                document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '€';
+                document.getElementById('Total-sum').innerHTML = "Σύνολο : " + String(tot) + '€';
               } else {
-                document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '0€';
+                document.getElementById('Total-sum').innerHTML = "Σύνολο : " + String(tot) + '0€';
               }
 						}
           </script>
