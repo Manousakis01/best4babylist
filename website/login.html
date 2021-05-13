@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="images/tab-icon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sign in screen for best4babylist" />
@@ -43,9 +44,10 @@
           width="300"
           height="75"
         />
-        <h1 class="h3 mb-3 fw-normal"></h1>
-        Συνδέσου
-
+        <h1 class="h3 mb-3 fw-normal">Παρακαλώ συνδεθείτε</h1>
+        <label style="padding-top: 10px" for="floatingInput"
+          >Διεύθυνση email</label
+        >
         <div class="form-floating">
           <input
             type="email"
@@ -54,25 +56,26 @@
             placeholder="name@example.com"
             data-error="Μη έγκυρο email."
           />
-          <label for="floatingInput">Email</label>
+          <label style="padding-top: 10px" for="floatingPassword"
+            >Κωδικός</label
+          >
         </div>
         <div class="form-floating">
           <input
             type="password"
             class="form-control"
             id="floatingPassword"
-            placeholder="Password"
+            placeholder="Κωδικός"
           />
-          <label for="floatingPassword">Password</label>
         </div>
 
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me" /> Remember me
+            <input type="checkbox" value="remember-me" /> Να με θυμάσαι
           </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">
-          Εισοδος
+          Συνδεθείτε
         </button>
       </form>
     </main>
