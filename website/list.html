@@ -109,9 +109,9 @@
 							</td>
 							<td data-th="Price">22.90€</td>
 							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
+								<input type="number" class="form-control text-center" value="1" onchange="calculateAmount(22.9, this.value, 'price1'); calculateTotalAmount();" required min='1'>
 							</td>
-							<td data-th="Subtotal" class="text-center">22.90€</td>
+							<td data-th="Subtotal" class="text-center" id='price1'>22.90€</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
 								<button id="butt1" onclick="one(this);"  class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
@@ -131,9 +131,9 @@
 							</td>
 							<td data-th="Price">499.00€</td>
 							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
+								<input type="number" class="form-control text-center" value="1" onchange="calculateAmount(499, this.value, 'price2'); calculateTotalAmount();" required min='1'>
 							</td>
-							<td data-th="Subtotal" class="text-center">499.00€</td>
+							<td data-th="Subtotal" class="text-center" id='price2'>499.00€</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
 								<button id="butt2" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
@@ -153,9 +153,9 @@
 							</td>
 							<td data-th="Price">125.00€</td>
 							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
+								<input type="number" class="form-control text-center" value="1" onchange="calculateAmount(125, this.value, 'price3'); calculateTotalAmount();" required min='1'>
 							</td>
-							<td data-th="Subtotal" class="text-center">125.00€</td>
+							<td data-th="Subtotal"  style="padding-right:-100px" class="text-center" id='price3'>125.00€</td>
 							<td class="actions" data-th="">
 								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
 								<button id="butt3" onclick="one(this);" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
@@ -164,15 +164,30 @@
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Total 646.90</strong></td>
+							<td class="text-center" id='total'><strong>Total 646.90</strong></td>
 						</tr>
 						<tr>
 							<td><a href="strollers.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong id="Total-sum">Total $646.90</strong></td>
+							<td class="hidden-xs text-center"><strong id="Total-sum">Total : 646.90€</strong></td>
 							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
 						</tr>
 					</tfoot>
+					<script>
+						function calculateAmount(price, quantity, id) {
+							var tot_price = price * quantity;
+							document.getElementById(id).innerHTML = String(tot_price.toFixed(2)) + '€';
+						}
+					</script>
+					<script>
+						function calculateTotalAmount() {
+							var p1 = parseFloat(document.getElementById('price1').innerHTML.substring(0, document.getElementById('price1').innerHTML.length - 1));
+							var p2 = parseFloat(document.getElementById('price2').innerHTML.substring(0, document.getElementById('price2').innerHTML.length - 1));
+							var p3 = parseFloat(document.getElementById('price3').innerHTML.substring(0, document.getElementById('price3').innerHTML.length - 1));
+							var tot = p1 + p2 + p3;
+							document.getElementById('Total-sum').innerHTML = "Total : " + String(tot) + '0€';
+						}
+					</script>
 				</table>
 </div>
     <div class="navbar-fixed-bottom">
