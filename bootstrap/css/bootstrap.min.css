@@ -1089,6 +1089,39 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0px;
+  right: 0px;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 300ms;
+}
+
+.cookie-container.active {
+  position: relative;
+  bottom: 450px;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 body {
   font-family: aca;
   font-size: 20px;
