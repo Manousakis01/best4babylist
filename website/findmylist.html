@@ -4,8 +4,8 @@
     <link rel="icon" href="images/tab-icon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Sign in screen for best4babylist" />
-    <title>Sign in</title>
+    <meta name="description" content="Find list for best4babylist" />
+    <title>Find my list</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -24,41 +24,21 @@
             height="75"
           />
       </a>
-        <h1 class="h3 mb-3 fw-normal">Παρακαλώ συνδεθείτε</h1>
+        <h1 class="h3 mb-3 fw-normal">Βρές την λίστα μου.</h1>
         <label style="padding-top: 10px" for="floatingInput"
-          >Διεύθυνση email</label
+          >Κωδικός λίστας</label
         >
         <div class="form-floating">
           <input
-            type="email"
+            type="listcode"
             class="form-control"
             id="floatingInput"
-            placeholder="name@example.com"
+            placeholder="#12345ex@ample"
             data-error="Μη έγκυρο email."
           />
-          <label style="padding-top: 10px" for="floatingPassword"
-            >Κωδικός</label
-          >
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Κωδικός"
-          />
-        </div>
-
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me" /> Να με θυμάσαι
-          </label>
-        </div>
-        <button onclick="location.href='index.html';" class="w-100 btn btn-lg btn-primary" type="button">
-          Συνδεθείτε
-        </button>
-        <br>
-        <a class="h3 mb-3 fw-normal" style="font-size:15px" href="signup.html">Δέν έχετε λογαριασμό;</a>
+            <button type="button" style="margin-top: 10px;" class="w-100 btn btn-lg btn-primary" type="submit" onclick="location.href='list.html';">
+            Αναζήτηση
+            </button>
       </form>
     </main>
     <div style="position:relative; padding-top: 280px;" class="navbar-fixed-bottom">
