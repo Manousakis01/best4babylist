@@ -4,10 +4,8 @@ body {
 }
 
 body {
-  display: flex;
+  margin: 0;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
   background-color: #f5f5f5;
 }
 
