@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/tab-icon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sign in screen for best4babylist" />
+    <title>Sign up</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="../bootstrap/css/bootstrap.signin.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form>
+        <a href="index.html">
+          <img
+            src="https://www.best4baby.gr/img/newlogo.svg"
+            alt="Best4baby"
+            style="position: relative"
+            width="300"
+            height="75"
+          />
+      </a>
+        <h1 class="h3 mb-3 fw-normal">Δημιουργία λογαριασμού</h1>
+        <label style="padding-top: 10px" for="floatingInput"
+          >Όνομα καί Επώνυμο</label
+        >
+        <div class="form-floating">
+          <input
+            type="name"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Εισάγεται το όνομα και το επώνημο σας εδώ."
+            data-error="Μη έγκυρο όνομα."
+          />
+          <label style="padding-top: 10px" for="floatingInput"
+          >Διεύθυνση email</label
+        >
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+            data-error="Μη έγκυρο email."
+          />
+          <label style="padding-top: 10px" for="floatingPassword"
+            >Κωδικός πρόσβασης</label
+          >
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Κωδικός"
+          />
+        </div>
+        
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> <u>Αποδέχομαι τους όρους χρήστη.</u>
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Δημιουργία
+        </button>
+        <br>
+        <a class="h3 mb-3 fw-normal" style="font-size:15px" href="login.html">Έχετε ήδη λογαριασμό;</a>
+      </form>
+    </main>
+    <div class="navbar-fixed-bottom">
+      <hr />
+      <footer class="footer">
+        <p>&copy; Copyright 2021 Εργασία | AUEB</p>
+      </footer>
+    </div>
+  </body>
+</html>
